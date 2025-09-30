@@ -100,7 +100,10 @@
             </div>
             <div class="hero-content-row">
                 <div class="hero-image">
-                    <img src="assets/img/audiograb-icon-1-256.png" alt="AudioGrab App Icon" class="app-icon">
+                    <picture>
+                        <source srcset="assets/img/audiograb-icon-1-256.webp" type="image/webp">
+                        <img src="assets/img/audiograb-icon-1-256.png" alt="AudioGrab App Icon" class="app-icon">
+                    </picture>
                 </div>
                 <div class="hero-text">
                     <p class="silver-text" data-i18n="audiograb.hero.subtitle">Audio recording made simple yet powerful</p>
@@ -235,32 +238,6 @@
         // Set the links on page load
         setPlayStoreLink();
 
-        // Simple recording functionality (keeping it minimal as requested)
-        const recordButton = document.getElementById('recordButton');
-        const recordingStatus = document.getElementById('recordingStatus');
-        let isRecording = false;
-
-        recordButton.addEventListener('click', function() {
-            if (!isRecording) {
-                // Start recording simulation
-                recordButton.classList.add('recording');
-                recordingStatus.textContent = 'Recording... Click to stop';
-                recordingStatus.style.color = 'var(--primary-color)';
-                isRecording = true;
-            } else {
-                // Stop recording simulation
-                recordButton.classList.remove('recording');
-                recordingStatus.textContent = 'Recording saved! Click to record again';
-                recordingStatus.style.color = 'var(--secondary-color)';
-                isRecording = false;
-                
-                // Simulate file download
-                setTimeout(() => {
-                    recordingStatus.textContent = 'Click to start recording';
-                    recordingStatus.style.color = 'var(--text-color)';
-                }, 2000);
-            }
-        });
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {

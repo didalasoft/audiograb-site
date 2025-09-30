@@ -18,30 +18,57 @@ class I18n {
     }
 
     getBrowserLanguage() {
-        const lang = navigator.language || navigator.userLanguage;
-        return lang.startsWith('es') ? 'es' : 'en';
+        try {
+            const lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+            return lang.startsWith('es') ? 'es' : 'en';
+        } catch (error) {
+            console.warn('Could not detect browser language:', error);
+            return 'en';
+        }
     }
 
     getSavedLanguage() {
-        return localStorage.getItem('didalaSoft-language');
+        try {
+            return localStorage.getItem('didalaSoft-language');
+        } catch (error) {
+            console.warn('Could not access localStorage:', error);
+            return null;
+        }
     }
 
     saveLanguage(lang) {
-        localStorage.setItem('didalaSoft-language', lang);
-        this.currentLang = lang;
+        try {
+            localStorage.setItem('didalaSoft-language', lang);
+            this.currentLang = lang;
+        } catch (error) {
+            console.warn('Could not save language to localStorage:', error);
+        }
     }
 
     async loadTranslations(lang) {
         try {
             const response = await fetch(`translations/${lang}.json`);
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
             this.translations = await response.json();
             this.applyTranslations();
             this.updateLanguageSelector();
         } catch (error) {
-            console.error('Failed to load translations:', error);
-            // Fallback to English if translation file doesn't exist
+            console.error('Failed to load translations for', lang, ':', error);
+            // Fallback to English if translation file doesn't exist or fetch fails
             if (lang !== 'en') {
+                console.log('Falling back to English translations');
                 this.loadTranslations('en');
+            } else {
+                console.error('Could not load English translations. Using fallback text.');
+                // Set minimal fallback translations
+                this.translations = {
+                    'nav.home': 'Home',
+                    'nav.audiograb': 'AudioGrab',
+                    'nav.privacy': 'Privacy'
+                };
+                this.applyTranslations();
             }
         }
     }
