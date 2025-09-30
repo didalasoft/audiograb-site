@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "home": "Home",
+    "audiograb": "AudioGrab",
+    "privacy": "Privacy"
+  },
+  "index": {
+    "hero": {
+      "tagline": "Empowering tomorrow's audio experiences today.",
+      "cta": "Discover AudioGrab"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: September 30, 2025",
+    "intro": "DidalaSoft (\"we\", \"our\", or \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our AudioGrab application.",
+    "important": "Important: AudioGrab works offline for core functionality. We collect minimal usage analytics to improve the app experience.",
+    "dataCollection": {
+      "title": "Data Collection",
+      "description": "We collect minimal usage data to improve the app:",
+      "items": {
+        "featureUsage": "Feature usage: Which features you use most often",
+        "performance": "App performance: Crash reports and performance metrics",
+        "device": "Device info: Device type and app version (no personal identifiers)"
+      }
+    },
+    "notCollected": {
+      "title": "What We Do NOT Collect",
+      "items": {
+        "personal": "Personal information (name, email, etc.)",
+        "recordings": "Audio recordings or file contents",
+        "location": "Location data",
+        "contacts": "Contact information"
+      }
+    },
+    "recording": {
+      "title": "Audio Recording",
+      "description": "AudioGrab requests microphone permission to record audio locally on your device. All recordings are stored only on your device and are never transmitted anywhere."
+    },
+    "storage": {
+      "title": "File Storage",
+      "description": "The app accesses your device's storage to save and load audio recordings. These files remain on your device and are not shared with us or any third parties."
+    },
+    "offline": {
+      "title": "Offline Operation",
+      "description": "AudioGrab's core recording functionality works entirely offline. Analytics data is sent only when you have an internet connection."
+    },
+    "analytics": {
+      "title": "Analytics Services",
+      "description": "We use analytics services to understand app usage patterns and improve performance. This helps us:",
+      "items": {
+        "identify": "Identify which features are most useful",
+        "fix": "Fix bugs and improve stability",
+        "test": "Test new features with gradual rollouts"
+      }
+    },
+    "rights": {
+      "title": "Your Rights",
+      "description": "Your audio captures remain completely private and under your control. Since we only collect minimal usage analytics, you can limit data collection by using the app offline."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "If you have any questions about this privacy policy, please contact us through the app store."
+    }
+  },
+  "audiograb": {
+    "hero": {
+      "title": "AudioGrab",
+      "subtitle": "Audio recording made simple yet powerful",
+      "tagline": "100% FREE - No subscriptions, no ads, no signup required",
+      "download": "Download Now"
+    },
+    "features": {
+      "title": "Features",
+      "intro": {
+        "heading": "Audio Recording Made Simple",
+        "text": "AudioGrab is built on the philosophy that audio recording should be simple, powerful, and accessible to everyone. Whether you're a musician, podcaster, journalist, or someone who just needs to capture moments in sound, AudioGrab gives you quality tools including advanced playback, precise editing, and a smart naming system to avoid that annoying repeat typing. <strong>And it's completely free with no subscriptions, no ads, and no signup required.</strong>"
+      },
+      "list": {
+        "quality": {
+          "title": "🎯 High Quality",
+          "desc": "Crystal clear audio capture with multiple format and codec options for every need."
+        },
+        "privacy": {
+          "title": "🔒 Privacy First",
+          "desc": "Your recordings stay on your device."
+        },
+        "design": {
+          "title": "🎨 Intuitive Design",
+          "desc": "Beautiful interface that gets out of your way when you need it to."
+        },
+        "player": {
+          "title": "🎵 Advanced Player",
+          "desc": "8-band equalizer with live visualization, custom presets, and seamless playback of large files."
+        },
+        "trimming": {
+          "title": "✂️ Audio Trimming",
+          "desc": "Precise audio editing with intuitive trimming tools for perfect recordings."
+        },
+        "naming": {
+          "title": "🏷️ Smart Naming",
+          "desc": "Tag system for instant naming and saving in just 2 taps. Organize recordings effortlessly."
+        },
+        "waveform": {
+          "title": "📊 Waveform Navigation",
+          "desc": "Visual waveform display for easy searching and navigation through your audio files."
+        },
+        "noAds": {
+          "title": "🚫 No Ads",
+          "desc": "Clean, ad-free experience. Focus on your audio without distractions or interruptions."
+        },
+        "free": {
+          "title": "💯 100% Free",
+          "desc": "Completely free to download and use. No subscriptions, no hidden costs, no signup required. Quality audio recording for everyone."
+        }
+      },
+      "download": "Download on Google Play"
+    },
+    "howItWorks": {
+      "title": "How AudioGrab Works - Simple Recording Process",
+      "offlineNote": "AudioGrab operates entirely offline. Your microphone access is only used for recording, and all audio data stays on your device. No internet connection required.",
+      "steps": {
+        "1": {
+          "title": "Step 1: Grant Microphone Permission",
+          "desc": "When you first use AudioGrab, your browser will ask for microphone permission. This is required for audio recording functionality."
+        },
+        "2": {
+          "title": "Step 2: Start Audio Recording",
+          "desc": "Click the red recording button to begin capturing high-quality audio from your microphone."
+        },
+        "3": {
+          "title": "Step 3: Stop Recording and Save File",
+          "desc": "Click the button again to stop recording. Your audio file will be saved to your device's download folder with smart naming."
+        }
+      }
+    }
+  },
+  "footer": "© 2025 DidalaSoft. All rights reserved."
+}

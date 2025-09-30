@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "audiograb": "AudioGrab",
+    "privacy": "Privacidad"
+  },
+  "index": {
+    "hero": {
+      "tagline": "Empoderando las experiencias de audio del mañana hoy.",
+      "cta": "Descubre AudioGrab"
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: 30 de septiembre de 2025",
+    "intro": "DidalaSoft (\"nosotros\", \"nuestro\" o \"nos\") se compromete a proteger tu privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y salvaguardamos tu información cuando usas nuestra aplicación AudioGrab.",
+    "important": "Importante: AudioGrab funciona sin conexión para la funcionalidad principal. Recopilamos análisis de uso mínimos para mejorar la experiencia de la aplicación.",
+    "dataCollection": {
+      "title": "Recopilación de Datos",
+      "description": "Recopilamos datos mínimos de uso para mejorar la aplicación:",
+      "items": {
+        "featureUsage": "Uso de funciones: Qué funciones usas con más frecuencia",
+        "performance": "Rendimiento de la aplicación: Reportes de errores y métricas de rendimiento",
+        "device": "Información del dispositivo: Tipo de dispositivo y versión de la aplicación (sin identificadores personales)"
+      }
+    },
+    "notCollected": {
+      "title": "Qué NO Recopilamos",
+      "items": {
+        "personal": "Información personal (nombre, email, etc.)",
+        "recordings": "Grabaciones de audio o contenido de archivos",
+        "location": "Datos de ubicación",
+        "contacts": "Información de contactos"
+      }
+    },
+    "recording": {
+      "title": "Grabación de Audio",
+      "description": "AudioGrab solicita permiso de micrófono para grabar audio localmente en tu dispositivo. Todas las grabaciones se almacenan solo en tu dispositivo y nunca se transmiten a ningún lugar."
+    },
+    "storage": {
+      "title": "Almacenamiento de Archivos",
+      "description": "La aplicación accede al almacenamiento de tu dispositivo para guardar y cargar grabaciones de audio. Estos archivos permanecen en tu dispositivo y no se comparten con nosotros ni con terceros."
+    },
+    "offline": {
+      "title": "Funcionamiento Sin Conexión",
+      "description": "La funcionalidad principal de grabación de AudioGrab funciona completamente sin conexión. Los datos de análisis se envían solo cuando tienes conexión a internet."
+    },
+    "analytics": {
+      "title": "Servicios de Análisis",
+      "description": "Utilizamos servicios de análisis para entender los patrones de uso de la aplicación y mejorar el rendimiento. Esto nos ayuda a:",
+      "items": {
+        "identify": "Identificar qué funciones son más útiles",
+        "fix": "Corregir errores y mejorar la estabilidad",
+        "test": "Probar nuevas funciones con lanzamientos graduales"
+      }
+    },
+    "rights": {
+      "title": "Tus Derechos",
+      "description": "Tus capturas de audio permanecen completamente privadas y bajo tu control. Dado que solo recopilamos análisis de uso mínimos, puedes limitar la recopilación de datos usando la aplicación sin conexión."
+    },
+    "contact": {
+      "title": "Contacto",
+      "description": "Si tienes alguna pregunta sobre esta política de privacidad, contáctanos a través de la tienda de aplicaciones."
+    }
+  },
+  "audiograb": {
+    "hero": {
+      "title": "AudioGrab",
+      "subtitle": "La grabación de audio hecha simple pero poderosa",
+      "tagline": "100% GRATIS - Sin suscripciones, sin anuncios, sin registro requerido",
+      "download": "Descargar Ahora"
+    },
+    "features": {
+      "title": "Características",
+      "intro": {
+        "heading": "Grabación de Audio Hecha Simple",
+        "text": "AudioGrab se basa en la filosofía de que la grabación de audio debe ser simple, poderosa y accesible para todos. Ya seas músico, podcaster, periodista o alguien que necesita capturar momentos en sonido, AudioGrab te brinda herramientas de calidad incluyendo reproducción avanzada, edición precisa y un sistema de nomenclatura inteligente para evitar esa molesta repetición de escritura. <strong>Y es completamente gratis sin suscripciones, sin anuncios y sin registro requerido.</strong>"
+      },
+      "list": {
+        "quality": {
+          "title": "🎯 Alta Calidad",
+          "desc": "Captura de audio cristalina con múltiples opciones de formato y códec para cada necesidad."
+        },
+        "privacy": {
+          "title": "🔒 Privacidad Primero",
+          "desc": "Tus grabaciones permanecen en tu dispositivo."
+        },
+        "design": {
+          "title": "🎨 Diseño Intuitivo",
+          "desc": "Interfaz hermosa que se aparta cuando la necesitas."
+        },
+        "player": {
+          "title": "🎵 Reproductor Avanzado",
+          "desc": "Ecualizador de 8 bandas con visualización en vivo, presets personalizados y reproducción perfecta de archivos grandes."
+        },
+        "trimming": {
+          "title": "✂️ Recorte de Audio",
+          "desc": "Edición precisa de audio con herramientas intuitivas de recorte para grabaciones perfectas."
+        },
+        "naming": {
+          "title": "🏷️ Nomenclatura Inteligente",
+          "desc": "Sistema de etiquetas para nomenclatura y guardado instantáneo en solo 2 toques. Organiza grabaciones sin esfuerzo."
+        },
+        "waveform": {
+          "title": "📊 Navegación por Forma de Onda",
+          "desc": "Pantalla visual de forma de onda para búsqueda fácil y navegación a través de tus archivos de audio."
+        },
+        "noAds": {
+          "title": "🚫 Sin Anuncios",
+          "desc": "Experiencia limpia y sin anuncios. Concéntrate en tu audio sin distracciones ni interrupciones."
+        },
+        "free": {
+          "title": "💯 100% Gratis",
+          "desc": "Completamente gratis para descargar y usar. Sin suscripciones, sin costos ocultos, sin registro requerido. Grabación de audio de calidad para todos."
+        }
+      },
+      "download": "Descargar en Google Play"
+    },
+    "howItWorks": {
+      "title": "Cómo Funciona AudioGrab - Proceso de Grabación Simple",
+      "offlineNote": "AudioGrab funciona completamente sin conexión. Tu acceso al micrófono solo se usa para grabar, y todos los datos de audio permanecen en tu dispositivo. No se requiere conexión a internet.",
+      "steps": {
+        "1": {
+          "title": "Paso 1: Otorgar Permiso de Micrófono",
+          "desc": "Cuando uses AudioGrab por primera vez, tu navegador te pedirá permiso de micrófono. Esto es requerido para la funcionalidad de grabación de audio."
+        },
+        "2": {
+          "title": "Paso 2: Iniciar Grabación de Audio",
+          "desc": "Haz clic en el botón rojo de grabación para comenzar a capturar audio de alta calidad desde tu micrófono."
+        },
+        "3": {
+          "title": "Paso 3: Detener Grabación y Guardar Archivo",
+          "desc": "Haz clic en el botón nuevamente para detener la grabación. Tu archivo de audio se guardará en la carpeta de descargas de tu dispositivo con nomenclatura inteligente."
+        }
+      }
+    }
+  },
+  "footer": "© 2025 DidalaSoft. Todos los derechos reservados."
+}

@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local development
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Browser cache
+.cache/
+
+# Package manager files (if using npm/yarn)
+package-lock.json
+yarn.lock
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Screenshots and local images (if not committed)
+screenshots/
+local-images/
+
+# Development notes
+notes.md
+todo.md</contents>
+</xai:function_call">This file contains appropriate ignore patterns for static websites.
