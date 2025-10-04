@@ -682,6 +682,11 @@ footer p {
         padding: 0 var(--spacing-md);
     }
 
+    .language-selector {
+        order: -1;
+        margin-right: var(--spacing-sm);
+    }
+
     .nav-links {
         position: absolute;
         top: 100%;
