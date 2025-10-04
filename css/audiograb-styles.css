@@ -78,7 +78,7 @@
 }
 
 .hero-text {
-    flex: 0.4;
+    flex: 0.6;
     max-width: 500px;
     text-align: left;
 }
@@ -577,6 +577,24 @@ li {
 .download-section {
     text-align: center;
     margin-top: var(--spacing-xl);
+}
+
+/* Motivation Section */
+#motivation {
+    max-width: 800px;
+    margin: var(--spacing-xl) auto;
+    padding: var(--spacing-md);
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--border-glow);
+}
+
+#motivation .motivation-content p {
+    color: var(--text-dim);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
 }
 
 /* Footer */
