@@ -209,9 +209,24 @@
             <h3 data-i18n="audiograb.howItWorks.steps.3.title">Step 3: Stop Recording and Save File</h3>
             <p data-i18n="audiograb.howItWorks.steps.3.desc">Click the button again to stop recording. Your audio file will be saved to your device's download folder with smart naming.</p>
         </section>
-        
 
-        
+        <section id="contact">
+            <h2 data-i18n="audiograb.contact.title">Contact Us 📧</h2>
+            <div class="contact-content">
+                <p data-i18n="audiograb.contact.description">
+                    Have questions or feedback about AudioGrab Recorder? We'd love to hear from you!
+                </p>
+                <p data-i18n="audiograb.contact.appStore">
+                    Please find our contact details directly in the Google Play Store listing. You can reach us through the app's store page for support, suggestions, or any inquiries.
+                </p>
+                <div class="contact-links">
+                    <a href="#" id="contact-playstore-link" class="secondary-button" data-i18n="audiograb.contact.findInStore">Find Contact Details in Google Play Store</a>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
 
     <footer>
@@ -240,6 +255,7 @@
         // Dynamic Play Store link based on device type
         const playstoreLink = document.getElementById('playstore-link');
         const heroPlaystoreLink = document.getElementById('hero-playstore-link');
+        const contactPlaystoreLink = document.getElementById('contact-playstore-link');
 
         function isMobileDevice() {
             return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -252,9 +268,11 @@
             if (isMobileDevice()) {
                 playstoreLink.href = mobileUrl;
                 heroPlaystoreLink.href = mobileUrl;
+                contactPlaystoreLink.href = mobileUrl;
             } else {
                 playstoreLink.href = desktopUrl;
                 heroPlaystoreLink.href = desktopUrl;
+                contactPlaystoreLink.href = desktopUrl;
             }
         }
 

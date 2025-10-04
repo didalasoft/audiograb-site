@@ -149,6 +149,12 @@
           "desc": "Click the button again to stop recording. Your audio file will be saved to your device's download folder with smart naming."
         }
       }
+    },
+    "contact": {
+      "title": "Contact Us 📧",
+      "description": "Have questions or feedback about AudioGrab Recorder? We'd love to hear from you!",
+      "appStore": "Please find our contact details directly in the Google Play Store listing. You can reach us through the app's store page for support, suggestions, or any inquiries.",
+      "findInStore": "Find Contact Details in Google Play Store"
     }
   },
   "footer": "© 2025 DidalaSoft. All rights reserved."

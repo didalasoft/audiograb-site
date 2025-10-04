@@ -149,6 +149,12 @@
           "desc": "Haz clic en el botón nuevamente para detener la grabación. Tu archivo de audio se guardará en la carpeta de descargas de tu dispositivo con nomenclatura inteligente."
         }
       }
+    },
+    "contact": {
+      "title": "Contáctanos 📧",
+      "description": "¿Tienes preguntas o comentarios sobre AudioGrab Recorder? ¡Nos encantaría escucharte!",
+      "appStore": "Por favor, encuentra nuestros detalles de contacto directamente en la lista de Google Play Store. Puedes contactarnos a través de la página de la tienda de la aplicación para soporte, sugerencias o cualquier consulta.",
+      "findInStore": "Encuentra Detalles de Contacto en Google Play Store"
     }
   },
   "footer": "© 2025 DidalaSoft. Todos los derechos reservados."
