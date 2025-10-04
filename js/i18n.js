@@ -81,6 +81,10 @@ class I18n {
             if (translation) {
                 if (element.tagName === 'INPUT' && element.type === 'placeholder') {
                     element.placeholder = translation;
+                } else if (element.tagName === 'TITLE') {
+                    element.textContent = translation;
+                } else if (element.tagName === 'META') {
+                    element.setAttribute('content', translation);
                 } else {
                     element.innerHTML = translation;
                 }

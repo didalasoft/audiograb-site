@@ -117,12 +117,20 @@
       "download": "Descargar en Google Play"
     },
     "motivation": {
-      "title": "La Historia Detrás de AudioGrab 🎵",
+      "title": "La Historia Detrás de AudioGrab Recorder 🎵",
       "intro": "¿Alguna vez te has encontrado en medio de una sesión de ensayo apasionada, 🎸 micrófono en mano, solo para darte cuenta de que estás a punto de gastar tiempo creativo precioso escribiendo los mismos nombres de canciones una y otra vez? 🤦‍♂️",
       "problem": "Esa es exactamente la frustración que dio origen a la creación de AudioGrab. Mientras grabábamos los ensayos de nuestra banda, nos enfrentábamos a una elección imposible: o pausar el flujo creativo para nombrar cada grabación justo ahí en el momento (escribiendo \"Título de la Canción - Toma 1\" repetidamente), o terminar con un montón de archivos inutilizables que tendríamos que renombrar después cuando el momento hubiera pasado. 📁➡️❓",
-      "solution": "¡Entra el sistema inteligente de etiquetas! 🎯 Ahora puedes grabar cada canción con solo 4 toques: ▶️ grabar, ⏹️ detener, 🏷️ agregar tu etiqueta, 💾 guardar. ¡No más sesiones tediosas de escritura interrumpiendo tu groove creativo!",
-      "benefit": "El resultado? Grabaciones cristalinas con nombres instantáneos y significativos que hacen que sea fácil seleccionar, organizar y subir a tu Google Drive compartido (o cualquier almacenamiento en línea que uses). 🎶 ¡La energía creativa de tu banda se mantiene enfocada donde pertenece – ¡en hacer música, no en gestionar archivos! 🚀",
+      "solution": "¡Entra el sistema inteligente de etiquetas de AudioGrab Recorder! 🎯 Ahora puedes grabar cada canción con solo 4 toques: ▶️ grabar, ⏹️ detener, 🏷️ agregar tu etiqueta, 💾 guardar. ¡No más sesiones tediosas de escritura interrumpiendo tu groove creativo!",
+      "benefit": "El resultado? AudioGrab Recorder te brinda grabaciones cristalinas con nombres instantáneos y significativos que hacen que sea fácil seleccionar, organizar y subir a tu Google Drive compartido (o cualquier almacenamiento en línea que uses). 🎶 ¡La energía creativa de tu banda se mantiene enfocada donde pertenece – ¡en hacer música, no en gestionar archivos! 🚀",
       "expansion": "Y esto no solo es útil para ensayos, sino también para grabar ideas o notas de voz. 💡"
+    },
+    "meta": {
+      "title": "AudioGrab Recorder - Aplicación de Grabación de Audio de Calidad | DidalaSoft",
+      "description": "AudioGrab Recorder de DidalaSoft - Aplicación GRATUITA de grabación de audio de calidad para Android con reproducción avanzada, recorte de audio e nomenclatura inteligente. Sin suscripciones, sin anuncios, sin registro requerido. Graba podcasts, música y entrevistas sin conexión.",
+      "ogTitle": "AudioGrab Recorder - Aplicación Gratuita de Grabación de Audio de Calidad | DidalaSoft",
+      "ogDescription": "AudioGrab Recorder de DidalaSoft - Aplicación GRATUITA de grabación de audio de calidad para Android con reproducción avanzada, recorte de audio e nomenclatura inteligente. Sin suscripciones, sin anuncios, sin registro requerido. Graba podcasts, música y entrevistas sin conexión.",
+      "twitterTitle": "AudioGrab Recorder - Aplicación Gratuita de Grabación de Audio de Calidad | DidalaSoft",
+      "twitterDescription": "AudioGrab Recorder de DidalaSoft - Aplicación GRATUITA de grabación de audio de calidad para Android con reproducción avanzada, recorte de audio e nomenclatura inteligente. Sin suscripciones, sin anuncios, sin registro requerido. Graba podcasts, música y entrevistas sin conexión."
     },
     "howItWorks": {
       "title": "Cómo Funciona AudioGrab - Proceso de Grabación Simple",

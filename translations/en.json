@@ -117,12 +117,20 @@
       "download": "Download on Google Play"
     },
     "motivation": {
-      "title": "The Story Behind AudioGrab 🎵",
+      "title": "The Story Behind AudioGrab Recorder 🎵",
       "intro": "Ever found yourself in the middle of a passionate rehearsal session, 🎸 microphone in hand, only to realize you're about to spend precious creative time typing the same song names over and over again? 🤦‍♂️",
       "problem": "That's exactly the frustration that sparked AudioGrab's creation. While recording our band's rehearsals, we faced an impossible choice: either pause the creative flow to name each recording right there on the spot (typing \"Song Title - Take 1\" repeatedly), or end up with a bunch of unusable files that we'd have to rename later when the moment had passed. 📁➡️❓",
-      "solution": "Enter the smart tag system! 🎯 Now you can record each song with just 4 taps: ▶️ record, ⏹️ stop, 🏷️ add your tag, 💾 save. No more tedious typing sessions interrupting your creative groove!",
-      "benefit": "The result? Crystal-clear recordings with instant, meaningful names that make it effortless to select, organize, and upload to your shared Google Drive (or any online storage you use). 🎶 Your band's creative energy stays focused where it belongs – on making music, not managing files! 🚀",
+      "solution": "Enter the AudioGrab Recorder smart tag system! 🎯 Now you can record each song with just 4 taps: ▶️ record, ⏹️ stop, 🏷️ add your tag, 💾 save. No more tedious typing sessions interrupting your creative groove!",
+      "benefit": "The result? AudioGrab Recorder gives you crystal-clear recordings with instant, meaningful names that make it effortless to select, organize, and upload to your shared Google Drive (or any online storage you use). 🎶 Your band's creative energy stays focused where it belongs – on making music, not managing files! 🚀",
       "expansion": "And this is not only useful for rehearsals, but also for recording ideas or memos. 💡"
+    },
+    "meta": {
+      "title": "AudioGrab Recorder - Quality Audio Recording App | DidalaSoft",
+      "description": "AudioGrab Recorder by DidalaSoft - FREE Android audio recording quality app with advanced playback, audio trimming, and smart naming. No subscriptions, no ads, no signup required. Record podcasts, music, and interviews offline.",
+      "ogTitle": "AudioGrab Recorder - Quality Free Audio Recording App | DidalaSoft",
+      "ogDescription": "AudioGrab Recorder by DidalaSoft - FREE Android audio recording quality app with advanced playback, audio trimming, and smart naming. No subscriptions, no ads, no signup required. Record podcasts, music, and interviews offline.",
+      "twitterTitle": "AudioGrab Recorder - Quality Free Audio Recording App | DidalaSoft",
+      "twitterDescription": "AudioGrab Recorder by DidalaSoft - FREE Android audio recording quality app with advanced playback, audio trimming, and smart naming. No subscriptions, no ads, no signup required. Record podcasts, music, and interviews offline."
     },
     "howItWorks": {
       "title": "How AudioGrab Works - Simple Recording Process",
