@@ -17,4 +17,4 @@ Disallow: /private/
 Disallow: /.git/
 
 # Sitemap location
-Sitemap: https://didalaSoft.com/sitemap.xml
+Sitemap: https://didalasoft.github.io/audiograb-site/sitemap.xml
