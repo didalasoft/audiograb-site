@@ -6,7 +6,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://didalaSoft.com/</loc>
+    <loc>https://didalasoft.github.io/audiograb-site/</loc>
     <lastmod>2025-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
   <!-- AudioGrab page -->
   <url>
-    <loc>https://didalaSoft.com/audiograb.html</loc>
+    <loc>https://didalasoft.github.io/audiograb-site/audiograb.html</loc>
     <lastmod>2025-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@
 
   <!-- Privacy Policy page -->
   <url>
-    <loc>https://didalaSoft.com/privacy.html</loc>
+    <loc>https://didalasoft.github.io/audiograb-site/privacy.html</loc>
     <lastmod>2025-09-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
