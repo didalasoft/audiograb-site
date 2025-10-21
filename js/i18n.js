@@ -1,12 +1,13 @@
 // Simple i18n implementation for DidalaSoft website
 class I18n {
     constructor() {
+        const urlLang = this.getLanguageFromUrl();
         const savedLang = this.getSavedLanguage();
         const rawBrowserLang = navigator.language || navigator.userLanguage;
         const browserLang = this.getBrowserLanguage();
 
-        this.currentLang = savedLang || browserLang || 'en';
-        console.log('Language detected:', rawBrowserLang, '->', browserLang, '| stored:', savedLang, '| applied:', this.currentLang);
+        this.currentLang = urlLang || savedLang || browserLang || 'en';
+        console.log('Language detected - URL:', urlLang, '| stored:', savedLang, '| browser:', rawBrowserLang, '->', browserLang, '| applied:', this.currentLang);
 
         this.translations = {};
         this.init();
@@ -15,6 +16,9 @@ class I18n {
     init() {
         this.loadTranslations(this.currentLang);
         this.setupLanguageSelector();
+        this.setupDynamicMetaTags();
+        this.updateInternalLinks();
+        this.setupHrefLang();
     }
 
     getBrowserLanguage() {
@@ -24,6 +28,24 @@ class I18n {
         } catch (error) {
             console.warn('Could not detect browser language:', error);
             return 'en';
+        }
+    }
+
+    getLanguageFromUrl() {
+        try {
+            const path = window.location.pathname;
+            const pathSegments = path.split('/').filter(segment => segment.length > 0);
+
+            // Find language segment anywhere in the path
+            const langIdx = pathSegments.findIndex(s => s.toLowerCase() === 'en' || s.toLowerCase() === 'es');
+            if (langIdx !== -1) {
+                return pathSegments[langIdx].toLowerCase();
+            }
+
+            return null;
+        } catch (error) {
+            console.warn('Could not parse URL for language:', error);
+            return null;
         }
     }
 
@@ -54,6 +76,9 @@ class I18n {
             this.translations = await response.json();
             this.applyTranslations();
             this.updateLanguageSelector();
+            this.setupDynamicMetaTags();
+            this.updateInternalLinks();
+            this.setupHrefLang();
         } catch (error) {
             console.error('Failed to load translations for', lang, ':', error);
             // Fallback to English if translation file doesn't exist or fetch fails
@@ -69,6 +94,9 @@ class I18n {
                     'nav.privacy': 'Privacy'
                 };
                 this.applyTranslations();
+                this.setupDynamicMetaTags();
+                this.updateInternalLinks();
+                this.setupHrefLang();
             }
         }
     }
@@ -101,6 +129,62 @@ class I18n {
         });
     }
 
+    setupHrefLang() {
+        // Inject rel="alternate" hreflang links for SEO
+        try {
+            const origin = 'https://didalasoft.github.io/audiograb-site';
+            const path = window.location.pathname.replace(/^\/+/, '');
+            const segs = path.split('/').filter(Boolean);
+            const langIdx = segs.findIndex(s => s === 'en' || s === 'es');
+            const pageSegs = segs.slice();
+            if (langIdx !== -1) pageSegs.splice(langIdx, 1);
+            const pagePath = pageSegs.join('/') || 'index.html';
+
+            // Remove existing alternates to avoid duplicates
+            Array.from(document.querySelectorAll('link[rel="alternate"][hreflang]')).forEach(n => n.parentNode.removeChild(n));
+
+            const links = [
+                { hreflang: 'en', href: `${origin}/en/${pagePath}` },
+                { hreflang: 'es', href: `${origin}/es/${pagePath}` },
+                { hreflang: 'x-default', href: `${origin}/en/${pagePath}` }
+            ];
+            links.forEach(({ hreflang, href }) => {
+                const el = document.createElement('link');
+                el.rel = 'alternate';
+                el.hreflang = hreflang;
+                el.href = href;
+                document.head.appendChild(el);
+            });
+        } catch (e) {
+            console.warn('Could not setup hreflang alternates:', e);
+        }
+    }
+
+    updateInternalLinks() {
+        // Ensure internal links keep the current language without using absolute paths
+        try {
+            const lang = this.currentLang || this.getLanguageFromUrl() || 'en';
+            const files = ['index.html', 'audiograb.html', 'privacy.html'];
+            const selector = files.map(f => `a[href="${f}"]`).join(', ');
+            const links = document.querySelectorAll(selector);
+
+            const path = window.location.pathname;
+            const segments = path.split('/').filter(s => s.length > 0);
+            const hasLang = segments.includes('en') || segments.includes('es');
+
+            links.forEach(link => {
+                const href = link.getAttribute('href');
+                if (!href || href.startsWith('http') || href.startsWith('#') || href.startsWith('/')) return;
+                if (hasLang) return; // already inside /{lang}/
+                const clean = href.replace(/^\/+/, '');
+                // Use relative path from root pages so GitHub Pages subpath is preserved
+                link.setAttribute('href', lang + '/' + clean);
+            });
+        } catch (error) {
+            console.warn('Could not update internal links:', error);
+        }
+    }
+
     getTranslation(key) {
         return key.split('.').reduce((obj, k) => obj && obj[k], this.translations);
     }
@@ -109,6 +193,31 @@ class I18n {
         if (lang !== this.currentLang) {
             this.saveLanguage(lang);
             this.loadTranslations(lang);
+
+            // Navigate to the appropriate language path
+            this.navigateToLanguage(lang);
+        }
+    }
+
+    navigateToLanguage(lang) {
+        try {
+            const currentPath = window.location.pathname;
+            const segments = currentPath.split('/').filter(segment => segment.length > 0);
+
+            // Replace existing language segment anywhere in the path, else insert after repo folder if present
+            const langIdx = segments.findIndex(s => s === 'en' || s === 'es');
+            if (langIdx !== -1) {
+                segments[langIdx] = lang;
+            } else {
+                const repoIdx = segments.indexOf('audiograb-site');
+                const insertAt = repoIdx !== -1 ? repoIdx + 1 : 0;
+                segments.splice(insertAt, 0, lang);
+            }
+
+            const newPath = '/' + segments.join('/') + (window.location.search || '') + (window.location.hash || '');
+            window.location.href = newPath;
+        } catch (error) {
+            console.warn('Could not navigate to language path:', error);
         }
     }
 
@@ -122,6 +231,48 @@ class I18n {
             });
         }
     }
+
+    setupDynamicMetaTags() {
+        // Dynamically update meta tags based on current URL and language
+        try {
+            const currentPath = window.location.pathname;
+            const baseUrl = 'https://didalasoft.github.io/audiograb-site';
+            const fullUrl = baseUrl + currentPath + (window.location.search || '');
+
+            // Update canonical URL - replace DYNAMIC_URL placeholder
+            const canonicalLink = document.querySelector('link[rel="canonical"]');
+            if (canonicalLink && canonicalLink.href.includes('DYNAMIC_URL')) {
+                canonicalLink.href = fullUrl;
+            }
+
+            // Update Open Graph URL - replace DYNAMIC_URL placeholder
+            const ogUrl = document.querySelector('meta[property="og:url"]');
+            if (ogUrl && ogUrl.content.includes('DYNAMIC_URL')) {
+                ogUrl.content = fullUrl;
+            }
+
+            // Update Twitter URL - replace DYNAMIC_URL placeholder
+            const twitterUrl = document.querySelector('meta[property="twitter:url"]');
+            if (twitterUrl && twitterUrl.content.includes('DYNAMIC_URL')) {
+                twitterUrl.content = fullUrl;
+            }
+
+            // Update JSON-LD structured data - replace DYNAMIC_URL placeholder
+            const jsonLdScript = document.querySelector('script[type="application/ld+json"]');
+            if (jsonLdScript) {
+                let jsonLdText = jsonLdScript.textContent;
+                if (jsonLdText.includes('DYNAMIC_URL')) {
+                    jsonLdText = jsonLdText.replace(/DYNAMIC_URL/g, currentPath + (window.location.search || ''));
+                    jsonLdScript.textContent = jsonLdText;
+                }
+            }
+
+            console.log('Meta tags updated for URL:', fullUrl);
+        } catch (error) {
+            console.warn('Could not update meta tags:', error);
+        }
+    }
+
 
     updateLanguageSelector() {
         const selector = document.getElementById('language-selector');

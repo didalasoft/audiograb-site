@@ -105,6 +105,22 @@
           "title": "📊 Waveform Navigation",
           "desc": "Visual waveform display for easy searching and navigation through your audio files."
         },
+        "split": {
+          "title": "✂️ Split Files",
+          "desc": "Split long recordings into multiple files at any point. Perfect for separating songs, interviews, or podcast segments."
+        },
+        "compressorReverb": {
+          "title": "🎛️ Compressor & Reverb",
+          "desc": "Professional audio effects including dynamic compression and reverb for studio-quality sound enhancement."
+        },
+        "fxPresets": {
+          "title": "⚡ FX Chain Presets",
+          "desc": "Save and reuse your favorite effect combinations. Create custom presets for different recording scenarios."
+        },
+        "playlists": {
+          "title": "📋 Playlists",
+          "desc": "Play a set of audios in sequence within the player. Playlist saving functionality coming soon."
+        },
         "noAds": {
           "title": "🚫 No Ads",
           "desc": "Clean, ad-free experience. Focus on your audio without distractions or interruptions."

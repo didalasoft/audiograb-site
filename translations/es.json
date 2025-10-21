@@ -105,6 +105,22 @@
           "title": "📊 Navegación por Forma de Onda",
           "desc": "Pantalla visual de forma de onda para búsqueda fácil y navegación a través de tus archivos de audio."
         },
+        "split": {
+          "title": "✂️ Dividir Archivos",
+          "desc": "Divide grabaciones largas en múltiples archivos en cualquier punto. Perfecto para separar canciones, entrevistas o segmentos de podcast."
+        },
+        "compressorReverb": {
+          "title": "🎛️ Compresor y Reverb",
+          "desc": "Efectos de audio profesionales incluyendo compresión dinámica y reverb para mejora de sonido de calidad de estudio."
+        },
+        "fxPresets": {
+          "title": "⚡ Presets de Cadena FX",
+          "desc": "Guarda y reutiliza tus combinaciones de efectos favoritas. Crea presets personalizados para diferentes escenarios de grabación."
+        },
+        "playlists": {
+          "title": "📋 Listas de Reproducción",
+          "desc": "Reproduce un conjunto de audios en secuencia dentro del reproductor. Funcionalidad de guardado de listas próximamente."
+        },
         "noAds": {
           "title": "🚫 Sin Anuncios",
           "desc": "Experiencia limpia y sin anuncios. Concéntrate en tu audio sin distracciones ni interrupciones."

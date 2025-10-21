@@ -1,12 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Root pages (redirect to language-specific versions) -->
   <url>
     <loc>https://didalasoft.github.io/audiograb-site/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://didalasoft.github.io/audiograb-site/en/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://didalasoft.github.io/audiograb-site/es/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://didalasoft.github.io/audiograb-site/en/index.html" />
   </url>
   <url>
     <loc>https://didalasoft.github.io/audiograb-site/audiograb.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://didalasoft.github.io/audiograb-site/en/audiograb.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://didalasoft.github.io/audiograb-site/es/audiograb.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://didalasoft.github.io/audiograb-site/en/audiograb.html" />
   </url>
   <url>
     <loc>https://didalasoft.github.io/audiograb-site/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://didalasoft.github.io/audiograb-site/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://didalasoft.github.io/audiograb-site/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://didalasoft.github.io/audiograb-site/en/privacy.html" />
+  </url>
+
+  <!-- English language versions -->
+  <url>
+    <loc>https://didalasoft.github.io/audiograb-site/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://didalasoft.github.io/audiograb-site/en/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://didalasoft.github.io/audiograb-site/es/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://didalasoft.github.io/audiograb-site/en/index.html" />
+  </url>
+  <url>
+    <loc>https://didalasoft.github.io/audiograb-site/en/audiograb.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://didalasoft.github.io/audiograb-site/en/audiograb.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://didalasoft.github.io/audiograb-site/es/audiograb.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://didalasoft.github.io/audiograb-site/en/audiograb.html" />
+  </url>
+  <url>
+    <loc>https://didalasoft.github.io/audiograb-site/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://didalasoft.github.io/audiograb-site/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://didalasoft.github.io/audiograb-site/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://didalasoft.github.io/audiograb-site/en/privacy.html" />
+  </url>
+
+  <!-- Spanish language versions -->
+  <url>
+    <loc>https://didalasoft.github.io/audiograb-site/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://didalasoft.github.io/audiograb-site/en/index.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://didalasoft.github.io/audiograb-site/es/index.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://didalasoft.github.io/audiograb-site/en/index.html" />
+  </url>
+  <url>
+    <loc>https://didalasoft.github.io/audiograb-site/es/audiograb.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://didalasoft.github.io/audiograb-site/en/audiograb.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://didalasoft.github.io/audiograb-site/es/audiograb.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://didalasoft.github.io/audiograb-site/en/audiograb.html" />
+  </url>
+  <url>
+    <loc>https://didalasoft.github.io/audiograb-site/es/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://didalasoft.github.io/audiograb-site/en/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://didalasoft.github.io/audiograb-site/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://didalasoft.github.io/audiograb-site/en/privacy.html" />
   </url>
 </urlset>
