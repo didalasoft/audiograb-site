@@ -18,3 +18,4 @@ Disallow: /.git/
 
 # Sitemap location
 Sitemap: https://didalasoft.github.io/audiograb-site/sitemap.xml
+Sitemap: https://didalasoft.github.io/audiograb-site/sitemap-basic.xml
